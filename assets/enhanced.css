@@ -1,0 +1,152 @@
+/************ Global **************/
+
+h1 {font-size: 4em; text-align: left; float: left;}
+h2 {font-size: 3em; width: 70%;}
+h3 {font-size: 2em;}
+h4 {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-size: 1.8em; 
+	font-style: italic;
+	font-weight: 500;
+	text-align: left;
+	border-bottom: #ccc 0.3em solid;
+}
+
+/************ / Global **************/
+
+
+/************ Common Elements **************/
+p, blockquote, label, legend {font-size: 1.6em;}
+
+header[role="banner"] > div,
+article[role="main"] > div, 
+footer[role="footer"] > div{
+	margin: 0 auto;
+	padding: 0 1.5em 0;
+	max-width: 80em;
+}
+/************ / Common Elements **************/
+
+
+/************ Header **************/
+header[role="banner"] .logo img {width: 5em; height: auto; margin-left: -0.2em;}
+
+header[role="banner"] nav {
+	text-align: right; float: right;
+}
+
+header[role="banner"] nav a {
+	text-align: right; float: right;
+	color: #555;
+	display: block;
+	padding: 0.5em 0 0.5em 0.8em;
+}
+/************ / Header **************/
+
+/************ Main **************/
+article[role="main"] header {
+	background: #fefdf6;
+	padding: 1em 2em; margin: 0 0 1em;
+	border-top: 0.1em solid #ebe8e1;
+	border-bottom: 0.2em solid #ebe8e1;
+}
+
+article[role="main"] section.services-header > div {
+	float: left;
+	width: 49%;
+	margin-bottom: 2em;
+}
+
+article[role="main"] section.project-title p {
+	
+}
+
+article[role="main"] .right-column, article[role="main"] .left-column {
+	padding: 0.2em 0.5em;
+}
+
+article[role="main"] .right-column {
+	float: right;
+	width: 58%;
+}
+
+article[role="main"] .left-column {
+	float: left;
+	width: 40%;
+}
+
+article[role="main"] .index-tiles {
+	display: block;
+}
+
+div.index-tiles section{
+	text-align: justify;
+	width: 46%;
+}
+
+div.index-tiles section:first-child{
+	margin: 0;
+	float: left;
+}
+
+div.index-tiles section:last-child{
+	margin: 0;
+	float: right;
+}
+
+div.index-tiles section p{
+	font-size: 1.4em;
+	line-height: 1.3;
+}
+
+article[role="main"] footer {
+	padding: 0.2em 1em 0.5em; margin: 1em 0 2em;
+}
+
+article[role="main"] footer h3:after {
+	content: ' with accessibility knowledge';
+}
+/************ / Main **************/
+
+
+/************ Footer **************/
+
+/************ / Footer **************/
+
+
+/************ Helper Classes **************/
+
+.services-info {
+	display: inline;
+	font-style: italic;
+	color: #888;
+}
+
+acronym, abbr {
+	border-bottom: #aaa dotted 0.1em;
+}
+/************ / Helper Classes **************/
+
+
+/************ Media Queries **************/
+/* 48em  = 768px and 60em  = 960px*/
+@media screen and (min-width: 48em) and (max-width: 60em) {
+
+}
+
+/* 60em  = 960px, 80em = 1280px */
+@media screen and (min-width: 60em) and (max-width: 80em) {
+	h2 {font-size: 3em; width: 50%;}
+}
+
+/* 80em = 1280px */
+@media screen and (min-width: 80em) {
+	.top {display: none;}
+}
+/************ / Media Queries **************/
+
+/* For IE 7, which doesn't support display: inline-block; */
+label, input, textarea, .nav-anchors li, .nav li, .price, .star, .star li, .product-img nav, .product-img nav li, .product-utils a, .reviews header h2, .footer li {
+	zoom: 1;
+	*display: inline;
+}
